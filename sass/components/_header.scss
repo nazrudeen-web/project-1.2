@@ -1,0 +1,21 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+header {
+  padding: $layoutPadding;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $boxShadow;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  img {
+    width: 12rem;
+  }
+  .btn {
+    @include button;
+    &:hover {
+      background-color: #000;
+    }
+  }
+}

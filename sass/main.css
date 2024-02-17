@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #1a1e66;
+  font-size: 1rem;
+}
+
+header {
+  padding: 0.5rem 12rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+header img {
+  width: 12rem;
+}
+header .btn {
+  padding: 1.5rem 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #4659e2;
+  border: 2px solid #4659e2;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+header .btn:hover {
+  background-color: #000;
+}
+
+.banner-container {
+  padding: 0.5rem 12rem;
+  background-image: url("/assets/images/banner-bg.png");
+  background-position: top left;
+}
+.banner-container .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin: 5rem 0;
+}
+.banner-container .banner .banner-content {
+  flex: 1.5;
+}
+.banner-container .banner .banner-content .heading-text {
+  font-size: 4rem;
+  margin: 2rem 0;
+  position: relative;
+}
+.banner-container .banner .banner-content .heading-text .heading-italis {
+  font-family: "Playfair Display", serif;
+  color: #3241ff;
+}
+.banner-container .banner .banner-content .heading-text::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  left: 0;
+  bottom: -35px;
+  background-color: #1a1e66;
+}
+.banner-container .banner .banner-content .heading-text::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  left: 70px;
+  bottom: -35px;
+  background-color: #1a1e66;
+}
+.banner-container .banner .banner-content .banner-para {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 4rem;
+  text-transform: capitalize;
+}
+.banner-container .banner .banner-form {
+  flex: 1;
+  margin-left: 2rem;
+  background-color: #fff;
+  padding: 5rem 4rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 1rem;
+}
+.banner-container .banner .banner-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner-container .banner .banner-form form .heading-text {
+  font-size: 3rem;
+  flex: 1;
+}
+.banner-container .banner .banner-form form .form-important {
+  background-color: #e3e6fb;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.banner-container .banner .banner-form form .form-important::before {
+  content: url(/assets/images/important.png);
+}
+.banner-container .banner .banner-form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.banner-container .banner .banner-form form div label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.banner-container .banner .banner-form form div input {
+  padding: 2rem 1.5rem;
+  height: 54px;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #e3e6fb;
+  border-radius: 10px;
+}
+.banner-container .banner .banner-form form div input:focus {
+  outline: none;
+  background-color: #f9f9f9;
+}
+.banner-container .banner .banner-form form div .phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.banner-container .banner .banner-form form div .phone::after {
+  content: url(/assets/images/whatsapp.png);
+}
+.banner-container .banner .banner-form form .agree-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner-container .banner .banner-form form .agree-box label {
+  font-weight: 400;
+}
+.banner-container .banner .banner-form form .btn {
+  padding: 1.5rem 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #4659e2;
+  border: 2px solid #4659e2;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.banner-container .banner .banner-form form .btn:hover {
+  background-color: #000;
+}
+.banner-container .banner-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 2rem;
+}
+.banner-container .banner-logos img {
+  max-width: 250px;
+  height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .banner-container {
+    padding: 1rem 3rem;
+  }
+  .banner-container .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .banner-container .banner-para {
+    margin-top: 4rem;
+  }
+  .banner-container .banner-logos {
+    justify-content: center;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

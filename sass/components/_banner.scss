@@ -1,0 +1,154 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.banner-container {
+  padding: $layoutPadding;
+  background-image: url("/assets/images/banner-bg.png");
+  background-position: top left;
+
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    margin: 5rem 0;
+
+    .banner-content {
+      flex: 1.5;
+
+      .heading-text {
+        font-size: 4rem;
+        margin: 2rem 0;
+        position: relative;
+        .heading-italis {
+          font-family: $secondaryFont;
+          color: $heading-secondary-color;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 4px;
+          left: 0;
+          bottom: -35px;
+          background-color: $bodyTextColor;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 4px;
+          left: 70px;
+          bottom: -35px;
+          background-color: $bodyTextColor;
+        }
+      }
+      .banner-para {
+        font-size: 2rem;
+        font-weight: 500;
+        padding-top: 4rem;
+        text-transform: capitalize;
+      }
+    }
+
+    .banner-form {
+      flex: 1;
+      margin-left: 2rem;
+      background-color: #fff;
+      padding: 5rem 4rem;
+      box-shadow: $boxShadow;
+      border-radius: 1rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .heading-text {
+          font-size: 3rem;
+          flex: 1;
+        }
+
+        .form-important {
+          background-color: $formImBgColor;
+          font-size: 1.5rem;
+          line-height: 1.4;
+          padding: 1.5rem;
+          font-weight: 500;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+          &::before {
+            content: url(/assets/images/important.png);
+          }
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          position: relative;
+
+          label {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
+          input {
+            padding: 2rem 1.5rem;
+            height: 54px;
+            font-size: 1.6rem;
+            font-family: $primaryFont;
+            border: 1px solid $formImBgColor;
+            border-radius: 10px;
+
+            &:focus {
+              outline: none;
+              background-color: #f9f9f9;
+            }
+          }
+          .phone {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &::after {
+              content: url(/assets/images/whatsapp.png);
+            }
+          }
+        }
+
+        .agree-box {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          label {
+            font-weight: 400;
+          }
+        }
+
+        .btn {
+          @include button;
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+  .banner-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 2rem;
+
+    img {
+      max-width: 250px;
+      height: auto;
+    }
+  }
+}

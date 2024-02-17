@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin button {
+  padding: 1.5rem 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: $btnBgColor;
+  border: 2px solid $btnBgColor;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+}

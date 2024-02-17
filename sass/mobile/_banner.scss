@@ -1,0 +1,18 @@
+@media screen and (max-width: 960px) {
+  .banner-container {
+    padding: 1rem 3rem;
+
+    .banner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .banner-para {
+      margin-top: 4rem;
+    }
+    .banner-logos {
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
