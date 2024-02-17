@@ -51,6 +51,7 @@ header .btn:hover {
 .banner-container {
   padding: 0.5rem 12rem;
   background-image: url("/assets/images/banner-bg.png");
+  background-repeat: no-repeat;
   background-position: top left;
 }
 .banner-container .banner {
@@ -209,6 +210,10 @@ header .btn:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 6rem;
+  }
+  .banner-container .banner .banner-form {
+    margin-left: 0;
   }
   .banner-container .banner-para {
     margin-top: 4rem;
