@@ -1,0 +1,48 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.position-content {
+  padding: $layoutPadding;
+  .position-heading {
+    text-align: center;
+    .position-text {
+      font-size: 4rem;
+      margin: 1rem;
+
+      .heading-italis {
+        font-family: $secondaryFont;
+        color: $heading-secondary-color;
+      }
+    }
+
+    .position-para {
+      font-size: 1.6rem;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.position-main {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .position-img {
+    flex: 1;
+    img {
+      width: 500px;
+    }
+  }
+  .postion-main-content {
+    flex: 1;
+
+    h3 {
+      font-size: 3rem;
+      margin: 2rem 0;
+    }
+    ul li {
+      font-size: 1.6rem;
+      margin: 1rem;
+    }
+  }
+}

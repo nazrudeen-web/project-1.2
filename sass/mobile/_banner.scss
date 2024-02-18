@@ -6,6 +6,11 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      gap: 6rem;
+
+      .banner-form {
+        margin-left: 0;
+      }
     }
     .banner-para {
       margin-top: 4rem;

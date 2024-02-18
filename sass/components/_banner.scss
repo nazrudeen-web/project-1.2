@@ -3,7 +3,8 @@
 
 .banner-container {
   padding: $layoutPadding;
-  background-image: url("/assets/images/banner-bg.png");
+  background-image: url("../../assets/images/banner-bg.png");
+  background-repeat: no-repeat;
   background-position: top left;
 
   .banner {
@@ -18,33 +19,9 @@
       flex: 1.5;
 
       .heading-text {
-        font-size: 4rem;
-        margin: 2rem 0;
-        position: relative;
-        .heading-italis {
-          font-family: $secondaryFont;
-          color: $heading-secondary-color;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          width: 60px;
-          height: 4px;
-          left: 0;
-          bottom: -35px;
-          background-color: $bodyTextColor;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          width: 15px;
-          height: 4px;
-          left: 70px;
-          bottom: -35px;
-          background-color: $bodyTextColor;
-        }
+        @include heading;
       }
+
       .banner-para {
         font-size: 2rem;
         font-weight: 500;
@@ -151,4 +128,13 @@
       height: auto;
     }
   }
+}
+
+.lines {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+  border-color: #e3e6fb;
 }

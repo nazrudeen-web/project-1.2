@@ -10,3 +10,33 @@
   color: #fff;
   cursor: pointer;
 }
+
+@mixin heading {
+  font-size: 4rem;
+  margin: 2rem 0;
+  position: relative;
+
+  .heading-italis {
+    font-family: $secondaryFont;
+    color: $heading-secondary-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    left: 0;
+    bottom: -35px;
+    background-color: $bodyTextColor;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    left: 70px;
+    bottom: -35px;
+    background-color: $bodyTextColor;
+  }
+}
